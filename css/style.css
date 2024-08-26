@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Public sans', sans-serif;
+    box-sizing: border-box;
+}
+html,body{
+   scroll-behavior: smooth;
+}
+ul{
+   list-style: none;
+}
+a{
+   text-decoration: none;
+}
+nav{
+    background-color: white;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4rem;
+    margin: 0px;  
+}
+nav li a{
+    color: #9698B4;
+}
+nav ul{
+    display: flex;
+    gap: 50px;
+    margin: 0px;
+    font-size: 1.0em;
+    text-align: center;
+}
+nav li{
+    display: list-item;
+    text-align: center;
+}
+button{
+   all: unset;
+   cursor: pointer;
+    border-radius: 28px;
+    background: linear-gradient( to right,#30CD7A, #2BB9D2);
+    color: white;
+    padding: 10px 20px;
+    font-size: 15px;
+    margin: 0;
+}
+#start{
+    background-color: #F3F4F6;
+    display: flex;
+    padding: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+#start .head-start{
+    width: 40%;
+    font-size: 1.6em;
+    margin-bottom: 10px;
+}
+#start .head-start h1{
+    font-size: 2em;
+    font-weight: 300;
+}
+#start .head-start p{
+   font-size: 20px;
+   margin: 20px 0;
+   line-height: 1.5;
+}
+#start .phone-pic{
+    width: 45%;
+}
+ #about{
+    background-color: white;
+    padding: 6rem 4rem;
+ }
+ #about .about-header{
+    width: 40%;
+ }
+ #about .about-header h1{
+    font-size: 2.5em;
+    font-weight: 100;
+ }
+ #about .about-header p{
+    font-size: 1.2em;
+ }
+ #about .about-body,#article .article-bottom{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 50px 0;
+    gap: 50px;
+    font-size: 16px;
+ }
+ #about .about-body h4{
+    font-size: 1.5em;    
+ }
+ #article{
+    padding: 6rem 4rem;
+    background-color: #F3F4F6;
+ }
+ #article .article-top h2{
+    font-size: 1.3em;
+    margin: 60px 0;
+ }
+ #article .article-bottom img{
+    width: 100%;
+ }
+ #article .article-bottom a{
+    color: black;
+    text-decoration: none;
+ }
+ #article .article-bottom a:hover{
+    color: #30CD7A;
+ }
+ footer{
+   background-color: #2D314D;
+ }
+ #career{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-top: 15px;
+   padding-bottom: 2rem;
+ }
+ #career img{
+   filter: invert(0.2);
+ }
+ #career .footer-link{
+   display: flex;
+   gap: 80px;
+ }
+ #career .footer-link li{
+   margin: 15px 0;
+ }
+ #career a{
+   color: white;
+   font-size: 1em;
+ }
+ #career .top-footer{
+   padding-left: 100px;
+ }
+ #career .footer{
+   padding: 0 50px;
+ }

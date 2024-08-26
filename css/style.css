@@ -140,4 +140,9 @@ button{
  }
  #career .footer{
    padding: 0 50px;
+   display: flex;
+   flex-direction: column;
+   /* justify-content: flex-end; */
+   align-items: flex-end;
  }
+ 

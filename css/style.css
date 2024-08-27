@@ -3,6 +3,7 @@
     padding: 0;
     font-family: 'Public sans', sans-serif;
     box-sizing: border-box;
+    border-width: 100%;
 }
 html,body{
    scroll-behavior: smooth;
@@ -165,15 +166,56 @@ button{
    /* justify-content: flex-end; */
    align-items: flex-end;
  }
+ @media screen and (max-width: 992px){
+   #start .head-start h1{
+      font-size: 1.2em;
+      font-weight: 300;
+      width: 100%;
+ }
+}
  @media screen and (max-width: 770px){
    #about .about-body,#article .article-bottom{
       display: grid;
       grid-template-columns: repeat(2, 1fr);
    }
- }
- @media screen and (max-width: 480px){
+   #about .about-header{
+      text-align: center;
+      width: auto;
+   }
+   #about .about-header h1{
+      font-size: 2.8em;
+      text-align: center;
+      font-weight: 300;
+   }
+   nav button{
+      display: none;
+   }
+   #start .head-start{
+      width: 100%;
+      font-size: 1.6em;
+      margin-bottom: 10px;
+  }
+#start .head-start h1{
+   font-size: 1.2em;
+   font-weight: 300;
+   width: 100%;
+}
+#start .head-start p{
+  font-size: 20px;
+  margin: 20px 0;
+  line-height: 1.5;
+}
+#start .phone-pic{
+   width: 45%;
+}
+}
+ @media screen and (max-width: 576px){
+   
    #start{
       display: block; 
+  }
+  #start .head-start h1{
+   text-align: center;
   }
   #start .phone-pic{
    width: 100%;
@@ -183,9 +225,106 @@ button{
    grid-template-columns: repeat(1, 1fr);
    text-align: center;
 }
+#about .about-body img{
+   width: 80px;
+}
 #about .about-header{
+   text-align: center;
+   width: auto;
+}
+#about .about-header h1{
+   font-size: 2.8em;
+   text-align: center;
+   font-weight: 300;
+}
+   #career{
+      display: block;
+      box-sizing: border-box;
+      text-align: center;
+   }
+ #career .footer-link{
+   display: flex;
+   gap: 30px;
+   text-align: center;
+   padding-left: 160px;
+   margin: 50px 0;
+ }
+ #career .top-footer ul{
+   text-align: center;
+   padding-left: 80px;
+ }
+ #career img{
+  padding-right: 130px;
+ }
+ #career .footer button{
+   width: 120px;
+   margin-left: 130px;
+ }
+}
+ @media screen and (max-width: 480px){
+   *{
+      box-sizing: border-box;
+   }
+   #start{
+      display: block; 
+  }
+  #start .head-start h1{
+   text-align: center;
+  }
+  #start .phone-pic{
+   width: 100%;
+  }
+  #about .about-body,#article .article-bottom{
+   display: grid;
+   grid-template-columns: repeat(1, 1fr);
+   text-align: center;
+}
+#about .about-body img{
+   width: 80px;
+}
+#about .about-header{
+   text-align: center;
+   width: auto;
+}
+#about .about-header h1{
+   font-size: 2.8em;
+   text-align: center;
+   font-weight: 300;
+}
+*{
+   width: 100%;
+}
+
+#career{
+   display: block;
+   box-sizing: border-box;
+   text-align: center;
+}
+#career .footer-link{
+display: block;
+gap: 30px;
+text-align: center;
+padding-left: 5px;
+margin: 50px 0;
+}
+#career .top-footer ul{
+text-align: center;
+padding-right: 200px;
+padding-left: 40px;
+gap: 10px;
+}
+#career img{
+padding-right: 130px;
+}
+#career .footer button{
+width: 120px;
+margin-left: 95px;
+}
+nav ul{
+   display: none;
+}
+nav a{
    text-align: center;
 }
  }
-
  
